@@ -1,0 +1,23 @@
+#Created 2/5/26
+#Author: Adam Kingery
+#Description: Input the purchase price per share, 
+#the current stock price and quantity of stock, compute the 
+#increase (or decrease) of the value of the stock entered.
+#(Value is computed as (current price –price per share) * quantity.
+#If the amount is negative that means you are losing money)
+#Create varriables for stock
+price_per_share = 0
+current_stock_price = 0 
+quantity_of_stock = 0
+value_difference = 0 
+#Ask user for stock details 
+print("Enter price per share:")
+price_per_share =input()
+print("Enter current stock price:")
+current_stock_price = input()
+print("Enter quantity of stock:")
+quantity_of_stock = input()
+#Calculate the difference in vaalue 
+value_difference = (int(current_stock_price) - int(price_per_share)) * int(quantity_of_stock)
+#Display value difference 
+print(f"The difference in value is:{value_difference}")
