@@ -1,0 +1,8 @@
+def sum (c, d):
+return (a * .4) + (b * .6)
+input('Enter Last Name: ')
+a = int(input('Enter Midterm Score: '))
+b = int(input('Enter Final Exam Score: '))
+c = a * .4
+d = b *.6
+print(f'Total Exam Points: {sum (c, d)}')
