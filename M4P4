@@ -1,0 +1,15 @@
+#Created 2/8/26
+#Author: Adam Kingery
+#Description: Enter first name and number of steps walked in a day. 
+#For each step you burned .25 calories.
+#Computer the number of calories burned. Display first name and calories burned.
+#Get user inputs
+print("Enter Name:")
+user_name = input()
+print("Enter walked steps:")
+walked_steps = input()
+#compute calories burned
+calories_burned = float(walked_steps) * .25
+#Display output
+print("Name:", user_name)
+print("Calories burned:", calories_burned)
