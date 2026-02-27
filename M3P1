@@ -1,0 +1,6 @@
+def product(a, b):
+return a * b 
+input('Enter Ticker: ')
+b = int(input('Enter Number of Shares: '))
+a = int(input('Enter Cost per Share: '))
+print(f'Amount invsted is {product (a, b)}')
