@@ -1,0 +1,10 @@
+def product (c, d):
+return c * d
+def difference (c, e):
+return c - e 
+a = input('Enter Make: ')
+b = input('Enter Model: ')
+c = int(input('Enter MSRP: '))
+d = float(input('Enter Discount % in Decimal Form: '))
+e = product (c, d) 
+print(f'Make:{a} Model:{b} MSRP:{c} Discount %:{d} Amount Off:{product (c, d)} Discounted Price:{difference (c, e)}')
