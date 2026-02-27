@@ -1,0 +1,23 @@
+#Created 2/8/26
+#Author: Adam Kingery
+#Description: You are setting up a business and need to compute the break-even point.
+#This indicates howmany items you must sell at a given price to cover your overhead.
+#Enter fixed costs, price per unit and cost per unit into your program. 
+#Compute the break-even point by dividing fixed costs
+#by the difference of price per unit and cost per unit.
+#Create variables
+fixed_costs = 0
+price_per_unit = 0 
+cost_per_unit = 0
+break_even_point = 0
+#Get user inputs 
+print("Enter fixed costs:")
+fixed_costs =input()
+print("Enter price per unit:")
+price_per_unit = input()
+print("Enter cost per unit:")
+cost_per_unit = input()
+#Compute break even point
+break_even_point = int(fixed_costs) / (int(price_per_unit) - int(cost_per_unit))
+#Display result 
+print(f"The Break even point is:{break_even_point}")
