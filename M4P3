@@ -1,0 +1,35 @@
+#Created 2/8/26
+#Author: Adam Kingery
+#Description: Enter the total for a meal. 
+#Compute a tip at 15%, 18% and 20%. Display total, each tip value and
+#total with each tip value. 
+#Your output should have total for the meal as entered, tip and total
+#with tip for each tip value. (9 lines). 
+#Put a blank line between each tip of the set of tip values. 
+#For example, Points are lost if the output is not formatted according to the directions.
+#Get meal price input 
+print("Enter price of meal before tip:")
+meal_pre_tip = input()
+#Create variable(s)
+tip_fifteen_percent = float(meal_pre_tip) * .15
+tip_eighteen_percent = float(meal_pre_tip) * .18
+tip_twenty_percent = float(meal_pre_tip) * .20
+total_fifteen_percent = tip_fifteen_percent + float(meal_pre_tip)
+total_eighteen_percent = tip_eighteen_percent + float(meal_pre_tip)
+total_twenty_percent = tip_twenty_percent + float(meal_pre_tip)
+#Display output
+print("")
+print("Tip 15%")
+print("Total before tip:", meal_pre_tip)
+print("Tip:", tip_fifteen_percent)
+print("Total with tip:", total_fifteen_percent)
+print("")
+print("Tip 18%")
+print("Total before tip:", meal_pre_tip)
+print("Tip:", tip_eighteen_percent)
+print("Total with tip:", total_eighteen_percent)
+print("")
+print("Tip 20%")
+print("Total before tip:", meal_pre_tip)
+print("Tip:", tip_twenty_percent)
+print("Total with tip:", total_twenty_percent)
