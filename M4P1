@@ -1,0 +1,28 @@
+#Create variables for exam scores
+#Created 2/5/26
+#Author: Adam Kingery
+#Description: Allow the user to enter two exam scores from
+#the keyboard. The first exam is worth 60% of the total
+#points and the second exam is worth 40%. Calculate the
+#total score by multiplying each exam score input by the
+#respective weighting then add the two results together.
+#Display the total.
+#Create variables for exam scores 
+exam_one_total = 100
+exam_two_total = 100
+exam_one_score = 0
+exam_two_score = 0
+total_score = 0
+exam_one_weight = .60
+exam_two_weight = .40
+#Ask user for exam scores
+print("Enter exam one score:")
+exam_one_score = input()
+print("exam one:", exam_one_score)
+print("Enter exam two score:")
+exam_two_score = input()
+#calculate the weighted grade
+(exam_one_weighted_total) = float(exam_one_score) * (exam_one_weight)
+(exam_two_weighted_total) = float(exam_two_score) * (exam_two_weight)
+total_score = exam_one_weighted_total + exam_two_weighted_total
+print(f"Total Score: {total_score}")
