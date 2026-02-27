@@ -1,0 +1,5 @@
+def quotient (a, b):
+return a / b
+a = int(input('Enter Full Pay: '))
+b=3
+print(f'Pay Per Person: {quotient (a, b)}')
