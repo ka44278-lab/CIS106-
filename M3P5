@@ -1,0 +1,11 @@
+def area (b, c):
+return b * c 
+def perimiter (e, d):
+return e * d
+a = float(input('Enter Radius of Circle: '))
+b = 3.14
+c = a * a 
+d = b * a 
+e = 2
+print(f' Area:{area(b, c)}')
+print(f' Perimiter:{perimiter(e, d)}')
