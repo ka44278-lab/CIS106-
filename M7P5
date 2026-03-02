@@ -1,0 +1,54 @@
+"""
+Created 3/2/26
+Adam Kingery
+Description: 
+Prompt the user on whether they want to do this program (just before the while loop). Yes
+means they want to continue. Any other response indicates they will stop the program. This
+response is the loop control variable. If the user answers Yes then go into the while loop.
+Note: you may use any variation or yes as shown in class to continue.
+
+Once in the while loop. You are to prompt the user for quantity and price of an item. Compute
+extended price (quantity times price of an item. If the extended price is greater than 10000.00
+compute a discount of 25%. All other orders get a 10% discount. For each order display
+extended price, discount amount (extended price x discount percent), total (extended price –
+discount amount).
+For each order sum the discount amount.
+After the loop (all data entered) display the sum of all the discounts.
+Finally, the last statements within the while loop will ask the user if they want to do this loop
+again. In other words, the user needs to be prompted again. The reason is that the end of the
+loop takes execution to the while condition to be evaluated again. It cannot take us to the first
+few lines of code that prompt the user for the first time. That code is out of the loop. Therefore,
+we need a second prompt at the bottom, inside the loop.
+"""
+
+print("Would you like to start this program? (Yes or No): ")
+program_start = input()
+
+total_discount_amount = 0 
+
+while program_start == "Yes":
+    print("Quantity of Item: ")
+    item_quantity = input()
+    print("Price of Item: ")
+    item_price = input()
+        
+    extended_price = float(item_price) * float(item_quantity)
+    if extended_price > 10000:
+       discount_percent = .25 
+    else:
+        discount_percent = .10
+        
+    discount_amount = extended_price * discount_percent
+    total = extended_price - discount_amount
+    
+    print("Extended Price: ", extended_price)
+    print("Discount Amount: ", discount_amount)
+    print("Total: ", total)
+    
+    total_discount_amount += discount_amount
+        
+    print("Do you wish to do this program again?")
+    program_start = input()
+    
+
+print("Total Discount Amount :", total_discount_amount)
