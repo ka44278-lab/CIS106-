@@ -1,0 +1,22 @@
+"""
+Created 3/2/26
+Adam Kingery
+Description: 
+Allow the user to enter a start value, stop value and increment value from the keyboard. Display
+all the numbers from the start value to stop value using the increment value as you proceed.
+Use a while loop structure for this problem.
+"""
+
+# Get input from the user
+start = int(input("Enter the start value: "))
+stop = int(input("Enter the stop value: "))
+increment = int(input("Enter the increment value: "))
+
+current = start
+    
+#Run loop
+
+while current <= stop:
+    print(current)
+    current += increment
+  
