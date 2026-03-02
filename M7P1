@@ -1,0 +1,15 @@
+"""
+Created 3/2/26
+Adam Kingery
+Description: 
+Display the odd numbers starting at 1 and ending with 25. Use a while loop structure for this
+problem.
+"""
+
+#set 1 as starting number
+number = 1 
+
+#Create a loop that only displays odd numbers to  25 
+while number <= 25:
+    print(number)
+    number += 2 
