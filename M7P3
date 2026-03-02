@@ -1,0 +1,42 @@
+"""
+Created 3/2/26
+Adam Kingery
+Description: Prompt the user on whether they want to do this program. “Yes”
+entry means they want to continue. Any other response indicates they will stop the program.
+This response is the loop control variable. If the user answers “Yes “then go into the while loop.
+Once in the while loop. You are to prompt the user for their last name and two exam scores.
+Compute the average exam score. Display last name and average. After the loop, display a count
+of the number of students who entered data.
+Finally, the last statements within the while loop will ask the user if they want to do this loop
+again.
+"""
+
+#Prompt user to start program 
+print("Would you like to start this program? (Yes or No): ")
+program_start = input()
+
+student_count = 0 
+
+while program_start == "Yes":
+    print("Enter Last Name: ")
+    last_name = input()
+    print("Enter Exam 1 Score: ")
+    exam__1_score = input()
+    print("Enter Exam 2 Score: ")
+    exam_2_score = input()
+        
+    exam_average = (int(exam__1_score) + int(exam_2_score)) / 2 
+        
+    print("Last Name: ", last_name)
+    print("Avg Exam Score: ", exam_average)
+    
+    student_count += 1 
+        
+    print("Do you wish to do this program again?")
+    program_start = input()
+    
+print("Number of students: ", student_count)
+    
+    
+    
+ 
