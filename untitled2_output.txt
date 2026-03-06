@@ -1,0 +1,26 @@
+Enter principle amount: 10000
+Enter interest rate: .1
+........................................
+Year......Begin Balance.....End Balance
+1 ........ 10000.0 ......... 11000.0
+Annual interest: 1000.0
+........................................
+Year......Begin Balance.....End Balance
+2 ........ 11000.0 ......... 12100.0
+Annual interest: 1100.0
+........................................
+Year......Begin Balance.....End Balance
+3 ........ 12100.0 ......... 13310.0
+Annual interest: 1210.0
+........................................
+Year......Begin Balance.....End Balance
+4 ........ 13310.0 ......... 14641.0
+Annual interest: 1331.0
+........................................
+Year......Begin Balance.....End Balance
+5 ........ 14641.0 ......... 16105.1
+Annual interest: 1464.1000000000001
+Total interest:  6105.1
+
+
+** Process exited - Return Code: 0 **
