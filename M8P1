@@ -1,0 +1,36 @@
+"""
+Created 3/5/26
+Adam Kingery
+Description:
+Allow the user to enter a principal amount and interest rate. Repeatedly (need a loop to control
+the program execution) compute the annual interest (principle x rate). Compute ending balance
+to be principal (beginning balance + interest). Display year, beginning balance and ending
+balance for each of the first 5 years. Display the accumulated interest for the 5 years. Note: the
+new balance by year (this will be the principle for the following year. Format the output to look
+like the example below.
+"""
+
+principle_amount = 0 
+interest_rate = 0 
+annual_interest = 0 
+total_interest = 0 
+begin_balance = 0 
+end_balance = 0 
+
+
+principle_amount = float(input("Enter principle amount: "))
+begin_balance = principle_amount
+interest_rate = float(input("Enter interest rate: "))
+
+for i in range(5):
+    annual_interest = begin_balance * interest_rate
+    end_balance = begin_balance + annual_interest
+    #Year beginning Ending Balance Balance 
+    print("........................................")
+    print("Year......Begin Balance.....End Balance")
+    print(i+1,"........",begin_balance,".........",end_balance)
+    begin_balance = end_balance
+    total_interest = total_interest + annual_interest
+    print("Annual interest:", annual_interest)
+
+print("Total interest: ", total_interest)
