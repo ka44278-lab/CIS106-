@@ -1,0 +1,25 @@
+Name: Jones
+Credits Taken: 12.0
+Tuition Owed: 3000.0
+---------------------------
+Name: Adams
+Credits Taken: 10.0
+Tuition Owed: 2500.0
+---------------------------
+Name: Baker
+Credits Taken: 12.0
+Tuition Owed: 6000.0
+---------------------------
+Name: Smith
+Credits Taken: 16.0
+Tuition Owed: 8000.0
+---------------------------
+Name: Johnson
+Credits Taken: 14.0
+Tuition Owed: 3500.0
+---------------------------
+Sum of All Tuition Owed: 23000.0
+Number of Students: 5
+
+
+** Process exited - Return Code: 0 **
