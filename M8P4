@@ -1,0 +1,48 @@
+"""
+Created 3/12/26
+Adam Kingery
+Description:
+Create a text file with item, quantity and price. Read through the file one line at a time.
+Compute the extended price (quantity x price). For each line display the item, quantity, price
+and extended price. After the loop display the sum of all the extended prices, the count of the
+number of orders and the average order.
+"""
+
+total_price = 0
+order_count = 0
+average_order = 0 
+
+file = open("textfile (1).txt")
+
+while True:
+    item = file.readline().strip()
+    
+     # stop when file ends
+    if item == "":   
+        break
+    
+    quantity = float(file.readline().strip())
+    price = float(file.readline().strip())
+    
+   #compute extended price
+    extended_price = quantity * price
+   
+    print("Item:" ,item) 
+    print("Quantity:",quantity)  
+    print("Price:$",price)
+    print("Extended price:$",extended_price)
+    print("-----------------------------")
+    
+    
+    
+    
+    order_count = order_count + 1
+    total_price = extended_price + total_price
+    average_order = total_price / order_count
+    
+    
+   
+file.close()
+print("Total price:",total_price) 
+print("Order count:",order_count)  
+print("Average order:$",average_order)
