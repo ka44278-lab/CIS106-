@@ -1,0 +1,24 @@
+Name: Adams
+Salary:$ 50000.0
+Bonus:$ 10000.0
+-----------------------------
+Name: Baker
+Salary:$ 75000.0
+Bonus:$ 15000.0
+-----------------------------
+Name: Smith
+Salary:$ 45000.0
+Bonus:$ 6750.0
+-----------------------------
+Name: Johnson
+Salary:$ 10000.0
+Bonus:$ 1500.0
+-----------------------------
+Name: Bartolozzi
+Salary:$ 67000.0
+Bonus:$ 13400.0
+-----------------------------
+Total Bonuses Paid:$ 46650.0
+
+
+** Process exited - Return Code: 0 **
