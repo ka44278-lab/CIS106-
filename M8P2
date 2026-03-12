@@ -1,0 +1,23 @@
+"""
+Created 3/12/26
+Adam Kingery
+Description:
+Fibonacci sequence is a sequence of natural order. The sequence is:
+1, 1, 2, 3, 5, 8 etc. where it is a series of numbers that may start with 0 and 1, and each
+subsequent number is the sum of the two preceding numbers. For this exercise, start with 1.
+Use a for loop compute and display first 20 numbers in the sequence.
+"""
+
+#Start sequence
+a = 1
+b = 1
+
+print(a)
+print(b)
+
+#Create loop (already printed first 2)
+for i in range(18):   
+    c = a + b
+    print(c)
+    a = b
+    b = c
