@@ -1,0 +1,41 @@
+"""
+Created 3/12/26
+Adam Kingery
+Description:
+Create a text file that contains employee last name and salary. Read in this data. Determine the
+bonus rate based on the chart below. Use that rate to compute bonus. For each line display the
+employee’s last name, salary and bonus. After the loop display the sum of all bonuses paid out.
+"""
+
+total_bonus = 0
+
+file = open("textfile.txt",)
+
+while True:
+    last_name = file.readline().strip()
+    
+    # stop when file ends
+    if last_name == "":   
+        break
+
+    salary = float(file.readline().strip())
+
+    # Determine bonus rate
+    if salary < 50000:
+        rate = 0.15
+    elif salary <= 100000:
+        rate = 0.20
+    else:
+        rate = 0.10
+
+    bonus = salary * rate
+    total_bonus += bonus
+
+    print("Name:" ,last_name) 
+    print("Salary:$",salary)  
+    print("Bonus:$",bonus)
+    print("-----------------------------")
+
+file.close()
+
+print("Total Bonuses Paid:$", total_bonus)
