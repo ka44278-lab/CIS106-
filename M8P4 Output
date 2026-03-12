@@ -1,0 +1,31 @@
+Item: Widget
+Quantity: 10.0
+Price:$ 50.0
+Extended price:$ 500.0
+-----------------------------
+Item: Hammer
+Quantity: 2.0
+Price:$ 10.0
+Extended price:$ 20.0
+-----------------------------
+Item: Saw
+Quantity: 4.0
+Price:$ 8.0
+Extended price:$ 32.0
+-----------------------------
+Item: Nails
+Quantity: 50.0
+Price:$ 1.0
+Extended price:$ 50.0
+-----------------------------
+Item: Screwdriver
+Quantity: 8.0
+Price:$ 15.0
+Extended price:$ 120.0
+-----------------------------
+Total price: 722.0
+Order count: 5
+Average order:$ 144.4
+
+
+** Process exited - Return Code: 0 **
