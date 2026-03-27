@@ -1,0 +1,10 @@
+Enter quantity: 100
+Enter price: 200
+Enter discount rate: .10
+Quantity: 100.0
+Price: $200.00
+Discount Amount: $2000.00
+Discounted Price: $18000.00
+
+
+** Process exited - Return Code: 0 **
