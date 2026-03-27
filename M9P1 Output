@@ -1,0 +1,18 @@
+Enter quantity (or 0 to finish): 100
+Enter price: 100
+Quantity: 100.0
+Price: $100.00
+Total (after discount if applied): $10000.00
+
+Enter quantity (or 0 to finish): 100
+Enter price: 200
+Quantity: 100.0
+Price: $200.00
+Total (after discount if applied): $18000.00
+
+Enter quantity (or 0 to finish): 0
+
+Final Total Extended Price: $28000.00
+
+
+** Process exited - Return Code: 0 **
