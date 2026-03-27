@@ -1,0 +1,17 @@
+Enter player's last name (or 'done' to quit): King
+Enter number of hits: 67
+Enter number of at bats: 100
+Player: King
+Batting Average: 0.670
+
+Enter player's last name (or 'done' to quit): Bart
+Enter number of hits: 50
+Enter number of at bats: 51
+Player: Bart
+Batting Average: 0.980
+
+Enter player's last name (or 'done' to quit): done
+Total number of players entered: 2
+
+
+** Process exited - Return Code: 0 **
