@@ -1,0 +1,24 @@
+Do you want to enter data? (Yes/No): Yes
+Enter make: Toyota
+Enter model: Rav4
+Electric vehicle (Y/N): N
+Enter MSRP: 25000
+Make: Toyota
+Model: Rav4
+Out-the-door price: $22737.50
+
+Do you want to enter data? (Yes/No): Yes
+Enter make: Honda
+Enter model: Accord
+Electric vehicle (Y/N): Y
+Enter MSRP: 20000
+Make: Honda
+Model: Accord
+Out-the-door price: $14980.00
+
+Do you want to enter data? (Yes/No): No
+Total MSRP of all cars: $45000.00
+Total Sales Price of all cars: $37717.50
+
+
+** Process exited - Return Code: 0 **
