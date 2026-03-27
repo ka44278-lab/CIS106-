@@ -1,0 +1,60 @@
+"""Created 3/27
+Adam Kingery
+Description:
+rompt the user to repeatedly to do the program input (Yes or No)). If they respond Yes, go into
+the loop and prompt them for last name, month and sales. Write a function to compute next
+month’s forecast. Pass to the function month and sales. Determine the forecast percent (see
+below) and compute next month’s sales to be sales x (1+forecast percent). Return next month’s
+sales and display the value.
+Month Forecast Percent
+Jan, Feb, Mar 0.10
+Apr, May, Jun 0.15
+Jul, Aug, Sep 0.20
+Oct, Nov, Dec 0.25
+"""
+
+def compute_forecast(month, sales):
+    month = month.lower()
+
+    # Determine forecast percent
+    if month in ["jan", "feb", "mar"]:
+        percent = 0.10
+    elif month in ["apr", "may", "jun"]:
+        percent = 0.15
+    elif month in ["jul", "aug", "sep"]:
+        percent = 0.20
+    elif month in ["oct", "nov", "dec"]:
+        percent = 0.25
+    else:
+        percent = 0  # invalid month
+
+    next_sales = sales * (1 + percent)
+    return next_sales
+
+
+def main():
+    while True:
+        answer = input("Do you want to enter data? (Yes/No): ").lower()
+
+        if answer == "no":
+            break
+        elif answer == "yes":
+            last_name = input("Enter last name: ")
+            month = input("Enter month (Jan-Dec): ")
+            
+            try:
+                sales = float(input("Enter sales: "))
+
+                forecast = compute_forecast(month, sales)
+
+                print(f"Name: {last_name}")
+                print(f"Next Month Forecast Sales: ${forecast:.2f}\n")
+
+            except ValueError:
+                print("Invalid sales amount.\n")
+        else:
+            print("Please enter Yes or No.\n")
+
+
+if __name__ == "__main__":
+    main()
