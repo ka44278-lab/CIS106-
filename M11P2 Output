@@ -1,0 +1,10 @@
+Enter student's last name: King
+Enter exam score 1: 60
+Enter exam score 2: 70
+Enter exam score 3: 80
+Student: King
+Total Points: 210.0
+Average Score: 70.00
+
+
+** Process exited - Return Code: 0 **
