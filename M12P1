@@ -1,0 +1,27 @@
+"""
+Created 3/5/26
+Adam Kingery
+"""
+#Assign 10 last names to an array. 
+#Write a function to display the names. 
+#Write another function to display the names in reverse order.
+
+last_name = ["Johnson", "Bartolozzi", "Kingery", "Smith", "Rodriguez", "Aparicio", "Medina", "Eizenga", "Colgan", "Macina"]
+
+#print(last_name[2])
+
+def display_name():
+    print("List Regular")
+    print("-----------------")
+    for x in last_name:
+        print(x)
+        
+def display_name_reverse():
+    print("List in reverse")
+    print("-----------------")
+    last_name.reverse()
+    for x in last_name:
+        print(x)
+        
+    
+display_name_reverse()
