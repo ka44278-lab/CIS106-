@@ -1,0 +1,31 @@
+"""
+Created 3/5/26
+Adam Kingery
+Description:
+Add another array to problem 1 above. This array
+should contain exam score for the respective students.
+That is, the first name goes with the first
+score etc. These are called parallel arrays. 
+Also modify the display functions to include exam
+score array in addition to the last name array.
+"""
+
+# Declare lists
+last_name = ["Johnson", "Bartolozzi", "Kingery", "Smith", "Rodriguez", "Aparicio", "Medina", "Eizenga", "Colgan", "Macina"]
+exam_score_list = [90, 99, 100, 89, 98, 87, 78, 65, 72, 85]
+
+def display_name_and_score():
+    print("List Regular")
+    print("-----------------")
+    for i in range(len(last_name)):
+        print(last_name[i] + " scored " + str(exam_score_list[i]) + " on exam")
+
+def display_name_and_score_reverse():
+    print("List in reverse")
+    print("-----------------")
+    for i in range(len(last_name)-1, -1, -1):
+        print(last_name[i] + " scored " + str(exam_score_list[i]) + " on exam")
+
+# Call functions
+display_name_and_score()
+display_name_and_score_reverse()
