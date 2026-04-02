@@ -1,0 +1,23 @@
+Player List
+-----------------
+Smith has a batting average of 0.275
+Johnson has a batting average of 0.31
+Williams has a batting average of 0.29
+Brown has a batting average of 0.25
+Jones has a batting average of 0.305
+Garcia has a batting average of 0.28
+Miller has a batting average of 0.265
+Davis has a batting average of 0.295
+Rodriguez has a batting average of 0.32
+Martinez has a batting average of 0.285
+
+Enter a last name to search (or 'quit' to exit): martinez
+Martinez has a batting average of 0.285
+
+Enter a last name to search (or 'quit' to exit): miller
+Miller has a batting average of 0.265
+
+Enter a last name to search (or 'quit' to exit): quit
+
+
+** Process exited - Return Code: 0 **
