@@ -1,0 +1,62 @@
+"""
+Created 3/5/26
+Adam Kingery
+Description:
+Write the code for the following problem. The data to load is lastname and score. You can do
+this from a file as done in an earlier exercise. Add a function to the program to display the last
+name and highest score, last name and lowest score.
+"""
+
+# Declare empty lists
+last_name = []
+exam_score_list = []
+
+# Function to load data from file
+def load_data():
+    with open("data.txt", "r") as file:
+        for line in file:
+            parts = line.split()
+            if len(parts) >= 2:
+                last_name.append(parts[0])
+                exam_score_list.append(int(parts[-1]))
+
+# Display all data
+def display_name_and_score():
+    print("List Regular")
+    print("-----------------")
+    for i in range(len(last_name)):
+        print(last_name[i], "scored", exam_score_list[i], "on exam")
+
+# Display highest score
+def display_highest():
+    high_var = 0
+    high_index = 0
+
+    for i in range(len(exam_score_list)):
+        if exam_score_list[i] > high_var:
+            high_var = exam_score_list[i]
+            high_index = i
+
+    print("\nHighest Score")
+    print("-----------------")
+    print(last_name[high_index], "scored", high_var)
+
+# Display lowest score
+def display_lowest():
+    low_var = 999
+    low_index = 0
+
+    for i in range(len(exam_score_list)):
+        if exam_score_list[i] < low_var:
+            low_var = exam_score_list[i]
+            low_index = i
+
+    print("\nLowest Score")
+    print("-----------------")
+    print(last_name[low_index], "scored", low_var)
+
+# Main program
+load_data()
+display_name_and_score()
+display_highest()
+display_lowest()
