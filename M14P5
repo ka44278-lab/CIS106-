@@ -1,0 +1,56 @@
+"""
+Created 3/5/26
+Adam Kingery
+Description:
+Load list of 10 Player Names and Batting Averages from a file into arrays, one of names and the
+other of averages. Write a function to display the two arrays.
+Write another function to search for the last name in the array and then display last name and
+batting average when found. Then use a while loop in the main program to repeatedly ask the
+user for a last name
+"""
+
+# Declare lists
+player_names = []
+batting_avg = []
+
+# Load data from file
+def load_data():
+    with open("players.txt", "r") as file:
+        for line in file:
+            parts = line.split()
+            if len(parts) >= 2:
+                player_names.append(parts[0])
+                batting_avg.append(float(parts[1]))
+
+# Display all players
+def display_players():
+    print("Player List")
+    print("-----------------")
+    for i in range(len(player_names)):
+        print(player_names[i], "has a batting average of", batting_avg[i])
+
+# Search for a player
+def search_player(name):
+    found = False
+    
+    if not found:
+        print("Player not found.")
+    
+    for i in range(len(player_names)):
+        if player_names[i].lower() == name.lower():
+            print(player_names[i], "has a batting average of", batting_avg[i])
+            found = True
+            break
+
+# Main program
+load_data()
+display_players()
+
+# Loop to repeatedly ask user
+while True:
+    user_input = input("\nEnter a last name to search (or 'quit' to exit): ")
+    
+    if user_input.lower() == "quit":
+        break
+    
+    search_player(user_input)
