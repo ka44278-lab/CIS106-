@@ -1,0 +1,57 @@
+"""
+Created 4/11/26
+Adam Kingery
+Description:
+Write the code for the following problem. Expand the dictionary above to have a list of three
+grades as the value. Create a function to create a list of three grade averages for the class. This
+list may be a dictionary, a list of lists ([name, average] as each element of the list, or some other
+list structure of your choice
+"""
+
+# Create dictionary with student names and a list of three grades
+students = {
+    "Alice": [85, 88, 90],
+    "Bob": [90, 92, 85],
+    "Charlie": [78, 80, 82],
+    "Diana": [92, 95, 94],
+    "Ethan": [88, 84, 86]
+}
+
+# Function to compute student averages
+def calculate_student_averages(student_dict):
+    averages_list = []  # list of [name, average]
+    
+    for name, grades in student_dict.items():
+        avg = sum(grades) / len(grades)
+        averages_list.append([name, avg])
+    
+    return averages_list
+
+# Function to compute class averages for each grade column
+def calculate_class_grade_averages(student_dict):
+    num_grades = len(next(iter(student_dict.values())))
+    totals = [0] * num_grades
+    
+    for grades in student_dict.values():
+        for i in range(num_grades):
+            totals[i] += grades[i]
+    
+    class_averages = [total / len(student_dict) for total in totals]
+    return class_averages
+
+# Get averages
+student_averages = calculate_student_averages(students)
+class_grade_averages = calculate_class_grade_averages(students)
+
+# Print header
+print(f"{'Student Name':<15}{'Grade 1':<10}{'Grade 2':<10}{'Grade 3':<10}{'Average':<10}")
+print("-" * 55)
+
+# Print student data with averages
+for name, grades in students.items():
+    avg = sum(grades) / len(grades)
+    print(f"{name:<15}{grades[0]:<10}{grades[1]:<10}{grades[2]:<10}{avg:<10.2f}")
+
+# Print class averages
+print("-" * 55)
+print(f"{'Class Average':<15}{class_grade_averages[0]:<10.2f}{class_grade_averages[1]:<10.2f}{class_grade_averages[2]:<10.2f}")
