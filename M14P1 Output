@@ -1,0 +1,11 @@
+Employee ID : 1001
+Name        : John Doe
+Address     : 123 Main St
+City/State  : Chicago, IL 60601
+Salary      : $75,000.00
+----------------------------------------
+Enter bonus rate (e.g., 0.10 for 10%): 0.10
+Bonus Amount: $7,500.00
+
+
+** Process exited - Return Code: 0 **
