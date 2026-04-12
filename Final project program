@@ -1,0 +1,89 @@
+"""
+Created 4/2/26
+Adam Kingery
+Description:
+Functions
+"""
+
+# List to store dogs (each dog is a dictionary)
+dog_list = []
+
+def display_menu():
+    print("\nDog Rescue")
+    print("-----------------")
+    print("1. Add Dog")
+    print("2. View Dogs")
+    print("3. Find Dog")
+    print("4. Quit")
+
+def add_dog():
+    while True:
+        name = input("Enter dog's name (or 'done' to stop): ")
+        
+        if name.lower() == "done":
+            break
+        
+        breed = input("Enter breed: ")
+        age = int(input("Enter age: "))
+        weight = float(input("Enter weight (lbs): "))
+        
+        # Store dog info as a dictionary
+        dog = {
+            "name": name,
+            "breed": breed,
+            "age": age,
+            "weight": weight
+        }
+        
+        dog_list.append(dog)
+        print(name, "has been added.\n")
+
+def view_dogs():
+    print("\nDog List")
+    print("-----------------")
+    
+    if len(dog_list) == 0:
+        print("No dogs in the system.")
+    else:
+        for dog in dog_list:
+            print("Name:", dog["name"])
+            print("Breed:", dog["breed"])
+            print("Age:", dog["age"])
+            print("Weight:", dog["weight"])
+            print("-----------------")
+
+def find_dog():
+    search_name = input("Enter dog name to find: ")
+    found = False
+
+    for dog in dog_list:
+        if dog["name"].lower() == search_name.lower():
+            print("\nDog Found:")
+            print("Name:", dog["name"])
+            print("Breed:", dog["breed"])
+            print("Age:", dog["age"])
+            print("Weight:", dog["weight"])
+            found = True
+            break
+
+    if not found:
+        print("Dog not found.")
+
+def main():
+    while True:
+        display_menu()
+        choice = input("Enter choice: ")
+
+        if choice == "1":
+            add_dog()
+        elif choice == "2":
+            view_dogs()
+        elif choice == "3":
+            find_dog()
+        elif choice == "4":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice.")
+
+main()
