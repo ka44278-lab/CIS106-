@@ -1,0 +1,91 @@
+
+Dog Rescue
+-----------------
+1. Add Dog
+2. View Dogs
+3. Find Dog
+4. Quit
+Enter choice: 1
+Enter dog's name (or 'done' to stop): Aster
+Enter breed: Pointer
+Enter age: 6
+Enter weight (lbs): 60
+Aster has been added.
+
+Enter dog's name (or 'done' to stop): Oreo
+Enter breed: Pit terrier
+Enter age: 7
+Enter weight (lbs): 68
+Oreo has been added.
+
+Enter dog's name (or 'done' to stop): Cali
+Enter breed: wiener dog
+Enter age: 5
+Enter weight (lbs): 27
+Cali has been added.
+
+Enter dog's name (or 'done' to stop): Maggie
+Enter breed: rat
+Enter age: 8
+Enter weight (lbs): 15
+Maggie has been added.
+
+Enter dog's name (or 'done' to stop): done
+
+Dog Rescue
+-----------------
+1. Add Dog
+2. View Dogs
+3. Find Dog
+4. Quit
+Enter choice: 2
+
+Dog List
+-----------------
+Name: Aster
+Breed: Pointer
+Age: 6
+Weight: 60.0
+-----------------
+Name: Oreo
+Breed: Pit terrier
+Age: 7
+Weight: 68.0
+-----------------
+Name: Cali
+Breed: wiener dog
+Age: 5
+Weight: 27.0
+-----------------
+Name: Maggie
+Breed: rat
+Age: 8
+Weight: 15.0
+-----------------
+
+Dog Rescue
+-----------------
+1. Add Dog
+2. View Dogs
+3. Find Dog
+4. Quit
+Enter choice: 3
+Enter dog name to find: Aster
+
+Dog Found:
+Name: Aster
+Breed: Pointer
+Age: 6
+Weight: 60.0
+
+Dog Rescue
+-----------------
+1. Add Dog
+2. View Dogs
+3. Find Dog
+4. Quit
+Enter choice: 4
+Goodbye!
+
+
+** Process exited - Return Code: 0 **
