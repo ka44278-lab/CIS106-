@@ -1,0 +1,33 @@
+"""
+Created 4/11/26
+Adam Kingery
+Description:Load list of 10 Player Names and Batting Averages from a file into a dictionary. (Create your own
+file with two items: player last name and batting average, i.e. 0.267, 0.300 etc, or use the file
+you created in the earlier problem set). Write a function to print the dictionary contents in two
+columns with a header for the name and average.
+"""
+
+# Function to load player data from file into a dictionary
+def load_players(filename):
+    players = {}
+    
+    with open(filename, 'r') as file:
+        for line in file:
+            name, avg = line.split()
+            players[name] = float(avg)
+    
+    return players
+
+# Function to print dictionary in two columns
+def print_players(players_dict):
+    print(f"{'Player Name':<15}{'Batting Avg':<15}")
+    print("-" * 30)
+    
+    for name, avg in players_dict.items():
+        print(f"{name:<15}{avg:<15.3f}")
+
+# Main program
+filename = "players.txt"
+players = load_players(filename)
+
+print_players(players)
