@@ -1,0 +1,51 @@
+"""
+Created 4/11/26
+Adam Kingery
+Description:
+Modify problem 2 to use a dictionary for the district code pair. Make sure it works. Expand the
+dictionary to include X for international students whose tuition is $800.00 per credit hour and G
+for reciprocity students whose tuition the same as an I student. instantiate at least one student
+of each district code.
+Some colleges have reciprocity agreements where a student from another school can take
+classes at in district rates. This usually applies to classes not offered by the home college. Harper
+does not have a commercial truck driver program for example.
+"""
+
+class Student:
+    # Dictionary for tuition rates
+    tuition_rates = {
+        "I": 250,   # In district
+        "O": 500,   # Out of district
+        "X": 800,   # International
+        "G": 250    # Reciprocity (same as in district)
+    }
+
+    def __init__(self, first_name, last_name, district_code, enrolled_credits):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.district_code = district_code.upper()
+        self.enrolled_credits = enrolled_credits
+
+    def calculate_tuition(self):
+        rate = Student.tuition_rates.get(self.district_code, 500)  # default to out-of-district
+        return rate * self.enrolled_credits
+
+    def display(self):
+        print(f"Name: {self.first_name} {self.last_name}")
+        print(f"District Code: {self.district_code}")
+        print(f"Credits: {self.enrolled_credits}")
+        print(f"Tuition Cost: ${self.calculate_tuition():,.2f}")
+        print("-" * 35)
+
+
+# Instantiate students (one of each type)
+student1 = Student("Adam", "Kingery", "I", 12)
+student2 = Student("Joe", "Bartolozzi", "O", 12)
+student3 = Student("Maria", "Lopez", "X", 12)
+student4 = Student("Sam", "Taylor", "G", 12)
+
+# Display all students
+student1.display()
+student2.display()
+student3.display()
+student4.display()
