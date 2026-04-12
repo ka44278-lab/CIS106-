@@ -1,0 +1,12 @@
+Student Name   Grade 1   Grade 2   Grade 3   Average   
+-------------------------------------------------------
+Alice          85        88        90        87.67     
+Bob            90        92        85        89.00     
+Charlie        78        80        82        80.00     
+Diana          92        95        94        93.67     
+Ethan          88        84        86        86.00     
+-------------------------------------------------------
+Class Average  86.60     87.80     87.40     
+
+
+** Process exited - Return Code: 0 **
