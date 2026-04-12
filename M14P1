@@ -1,0 +1,48 @@
+"""
+Created 4/11/26
+Adam Kingery
+Description:
+Watch the video on creating a simple class. Create the class in the video and test it to make sure
+it works.  Add a method to the class that accepts a bonus rate for the employee. It should then compute
+the employee bonus of rate x salary and return this value. Demonstrate this method works by
+entering a bonus rate and displaying the bonus.
+"""
+
+class Employee:
+    def __init__(self, first_name, last_name, address, city, state, zip_code, employee_id, salary):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.address = address
+        self.city = city
+        self.state = state
+        self.zip_code = zip_code
+        self.employee_id = employee_id
+        self.salary = salary
+
+    # Method to display employee information
+    def display(self):
+        print(f"Employee ID : {self.employee_id}")
+        print(f"Name        : {self.first_name} {self.last_name}")
+        print(f"Address     : {self.address}")
+        print(f"City/State  : {self.city}, {self.state} {self.zip_code}")
+        print(f"Salary      : ${self.salary:,.2f}")
+        print("-" * 40)
+
+    # Method to calculate bonus
+    def calculate_bonus(self, rate):
+        bonus = rate * self.salary
+        return bonus
+
+
+# Example usage
+emp = Employee(
+    "John", "Doe",
+    "123 Main St",
+    "Chicago", "IL", "60601",
+    1001, 75000
+)
+
+emp.display()
+
+# Get bonus rate from user
+rate = float(input("Enter bonus rate (e.g., 0.10 for 10%): "))
